@@ -1,6 +1,15 @@
 <template>
   <div class="item holidaysWrapper">
-    holidaysCard
+    <div class="title header">
+      <h1 class="header_letters">{{ header.toUpperCase() }}</h1>
+      </div>
+    <div class="body"></div>
+     <div class="title footer">
+      <p class="footer_letters">
+      {{ footer }}
+      </p>
+      <img class="footer_icon" src="../assets/arrow.png"/>
+      </div>
   </div>
 </template>
 
@@ -8,7 +17,8 @@
 export default {
   name: 'holidaysCard',
   props: {
-    msg: String
+    header: String,
+    footer:String,
   }
 }
 </script>
