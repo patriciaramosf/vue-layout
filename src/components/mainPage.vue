@@ -59,7 +59,7 @@ export default {
   font-size:16px;
 }
 .body{
-  background-color: rgba(235,239,242, 0.2);
+  background-color: rgba(235,239,242, 0.3);
   width:100%;
   height:100%;
 }

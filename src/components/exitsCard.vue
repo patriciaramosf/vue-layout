@@ -29,6 +29,8 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  padding-top:0.8em;
 }
 .exitIcon {
   width: 30px;

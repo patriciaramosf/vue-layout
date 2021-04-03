@@ -4,34 +4,41 @@
       <h1 class="header_letters">{{ header.toUpperCase() }}</h1>
     </div>
     <div class="body bodyHolidays">
-      <div class="rowHolidays">
-        <childHolidaysCard
-          holidaysDate="San José"
-          holidaysMonth="Mar"
-          holidaysDay="13"
-          holidaysLocation="En Madrid, Barcelona y 3 más"
-        />
-        <childHolidaysCard
-          holidaysDate="San José"
-          holidaysMonth="Mar"
-          holidaysDay="13"
-          holidaysLocation="En Barcelona"
-        />
-      </div>
-      <div class="rowHolidays">
-        <childHolidaysCard
-          holidaysDate="San José"
-          holidaysMonth="Mar"
-          holidaysDay="13"
-          holidaysLocation="En Madrid, Barcelona y 3 más"
-        />
-        <childHolidaysCard
-          holidaysDate="San José"
-          holidaysMonth="Mar"
-          holidaysDay="13"
-          holidaysLocation="En Barcelona"
-        />
-      </div>
+      <childHolidaysCard
+        holidaysDate="San José"
+        holidaysMonth="Mar"
+        holidaysDay="13"
+        holidaysLocation="En Madrid, Barcelona y 3 más"
+        holidaysDayOfWeek="miércoles"
+      />
+      <childHolidaysCard
+        holidaysDate="San Ignacio de Loyola"
+        holidaysMonth="Mar"
+        holidaysDay="30"
+        holidaysLocation="En Madrid, Barcelona y 3 más"
+        holidaysDayOfWeek="viernes"
+      />
+      <childHolidaysCard
+        holidaysDate="Mi festivo 1"
+        holidaysMonth="Abr"
+        holidaysDay="02"
+        holidaysLocation="En Barcelona"
+        holidaysDayOfWeek="domingo"
+      />
+      <childHolidaysCard
+        holidaysDate="Mi festivo 2"
+        holidaysMonth="Ago"
+        holidaysDay="17"
+        holidaysLocation="En Madrid"
+        holidaysDayOfWeek="miércoles"
+      />
+       <childHolidaysCard
+        holidaysDate="San José"
+        holidaysMonth="Mar"
+        holidaysDay="13"
+        holidaysLocation="En Barcelona"
+        holidaysDayOfWeek="lunes"
+      />
     </div>
     <div class="title footer">
       <p class="footer_letters">
@@ -63,13 +70,12 @@ export default {
   grid-row-end: 9;
 }
 .bodyHolidays {
-  display: flex;
-  flex-direction: column;
-  align-items:center;
-  justify-content: center;
-}
-.rowHolidays {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap:8px;
+  background-color: rgba(235,239,242, 0.2);
+  padding-top:0.5em;
+  overflow: hidden;
 }
 </style>
