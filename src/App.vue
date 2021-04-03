@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <MainPage msg="Welcome to Your Vue.js App"/>
+    <MainPage/>
   </div>
 </template>
 
@@ -16,4 +16,7 @@ export default {
 </script>
 
 <style>
+#app{
+  background-color:lightyellow;
+}
 </style>
