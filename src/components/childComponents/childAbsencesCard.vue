@@ -11,7 +11,7 @@
         <p class="absences__description">{{ absencesDescription }}</p>
         <div class="absences__type_wrapper">
           <div :style="{ backgroundColor: activeColor}" class="absences__type_circle"></div>
-          <p :style="{ color: activeColor}">{{ absencesType }}</p>
+          <p class="absences__type_name" :style="{ color: activeColor}">{{ absencesType }}</p>
         </div>
       </div>
       <p class="absences__dates">{{ absencesDates }}</p>
@@ -48,8 +48,8 @@ export default {
 }
 .childAbsencesCard_dateCartoon {
   border-radius: 50%;
-  width: 45px;
-  height: 45px;
+  width: 35px;
+  height: 35px;
   border: none;
   display: flex;
   flex-direction: column;
@@ -64,12 +64,17 @@ export default {
 .absences__type_wrapper {
   display: flex;
   align-items: center;
-   position: relative;
+  position: relative;
   bottom: 18px;
+  text-align:left;
 }
 .absences__description {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 700;
+   text-align: left;
+}
+.absences__type_name{
+  text-align: left;
 }
 .absences__type_circle {
   border-radius: 50%;

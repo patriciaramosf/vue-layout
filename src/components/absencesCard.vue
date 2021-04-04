@@ -70,6 +70,6 @@ export default {
   grid-template-rows: auto;
   grid-gap: 5px;
   overflow: hidden;
-   padding-top:0.5em;
+  padding-top:0.5em;
 }
 </style>
