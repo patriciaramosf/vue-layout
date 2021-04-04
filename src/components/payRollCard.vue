@@ -44,7 +44,8 @@ export default {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: auto;
-  grid-gap: 8px;
-   overflow:hidden;
+  grid-gap: 5px;
+  overflow:hidden;
+   padding-top:0.5em;
 }
 </style>
