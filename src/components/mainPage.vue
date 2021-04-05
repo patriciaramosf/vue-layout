@@ -55,7 +55,6 @@ export default {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
   font-weight: 700;
 }
-/* header css */
 .header_letters {
   font-size: 16px;
   padding: 10px;
@@ -65,7 +64,6 @@ export default {
   width: 100%;
   height: 100%;
 }
-/* footer css */
 .footer {
   color: #f57c05;
   display: flex;
