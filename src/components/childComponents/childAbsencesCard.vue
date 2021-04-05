@@ -7,11 +7,13 @@
           :src="require(`@/assets/${absencesImage}`)"
         />
       </div>
-      <div>
+      <div class="absences__description_wrapper">
         <p class="absences__description">{{ absencesDescription }}</p>
         <div class="absences__type_wrapper">
-          <div :style="{ backgroundColor: activeColor}" class="absences__type_circle"></div>
-          <p class="absences__type_name" :style="{ color: activeColor}">{{ absencesType }}</p>
+          <div :style="backgroundStyle" class="absences__type_circle"></div>
+          <p class="absences__type_name" :style="colorStyle">
+            {{ absencesType }}
+          </p>
         </div>
       </div>
       <p class="absences__dates">{{ absencesDates }}</p>
@@ -28,6 +30,30 @@ export default {
     absencesImage: String,
     absencesType: String,
     absencesDates: String,
+  },
+  data() {
+    return {
+      backgroundStyle: {
+        backgroundColor: "",
+      },
+      colorStyle: {
+        color: "",
+      },
+    };
+  },
+  methods: {
+    setColor() {
+      if (this.absencesDescription === "Paula Palmera") {
+        this.backgroundStyle.backgroundColor = "#73ff59";
+        this.colorStyle.color = "#73ff59";
+      } else {
+        this.backgroundStyle.backgroundColor = "#16a089";
+        this.colorStyle.color = "#f57c05";
+      }
+    },
+  },
+  created() {
+    this.setColor();
   },
 };
 </script>
@@ -66,20 +92,20 @@ export default {
   align-items: center;
   position: relative;
   bottom: 18px;
-  text-align:left;
+  text-align: left;
 }
 .absences__description {
-  font-size: 12px;
-  font-weight: 700;
-   text-align: left;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: left;
 }
-.absences__type_name{
+.absences__type_name {
   text-align: left;
 }
 .absences__type_circle {
   border-radius: 50%;
-  width: 10px;
-  height: 10px;
+  width: 8px;
+  height: 8px;
   border: none;
   margin-right: 2px;
 }
@@ -89,8 +115,8 @@ export default {
   position: absolute;
   right: 10px;
 }
-.absences__dates{
-   color:darkgrey;
-  font-weight:200;
+.absences__dates {
+  color: darkgrey;
+  font-weight: 200;
 }
 </style>

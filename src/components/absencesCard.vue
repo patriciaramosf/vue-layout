@@ -14,22 +14,22 @@
         absencesDescription="Paula Palmera"
         absencesImage="vacation.png"
         absencesType="Vacaciones"
-        absencesDates="25/03/2021 de 10.03 a 11.23"
+        absencesDates="25/03/2021 al 30/03/2021"
       />
       <childAbsencesCard
-        absencesDescription="Paula Palmera"
+        absencesDescription="Doraemon el Gato Cósmico"
         absencesImage="absence.png"
         absencesType="Ausencia"
         absencesDates="25/03/2021 de 10.03 a 11.23"
       />
       <childAbsencesCard
-        absencesDescription="Paula Palmera"
+        absencesDescription="Doraemon el Gato Cósmico"
         absencesImage="vacation.png"
         absencesType="Baja médica"
         absencesDates="25/03/2021 de 10.03 a 11.23"
       />
       <childAbsencesCard
-        absencesDescription="Paula Palmera"
+        absencesDescription="Jon Doe"
         absencesImage="sickness.png"
         absencesType="Baja médica"
         absencesDates="25/03/2021 de 10.03 a 11.23"

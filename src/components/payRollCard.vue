@@ -38,7 +38,7 @@ export default {
   grid-column-start: 10;
   grid-column-end: 13;
   grid-row-start: 3;
-  grid-row-end: 8;
+  grid-row-end: 7;
 }
 .payRollBody {
   display: grid;
