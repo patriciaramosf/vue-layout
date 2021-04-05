@@ -44,8 +44,8 @@ export default {
   methods: {
     setColor() {
       if (this.absencesDescription === "Paula Palmera") {
-        this.backgroundStyle.backgroundColor = "#73ff59";
-        this.colorStyle.color = "#73ff59";
+        this.backgroundStyle.backgroundColor = "#89e16a";
+        this.colorStyle.color = "#89e16a";
       } else {
         this.backgroundStyle.backgroundColor = "#16a089";
         this.colorStyle.color = "#f57c05";
@@ -59,7 +59,7 @@ export default {
 </script>
 <style>
 .childAbsencesCard {
-  font-size: 12px;
+  font-size: 14px;
   background: white;
   padding: 5px;
 }

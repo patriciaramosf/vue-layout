@@ -17,7 +17,7 @@ export default {
 </script>
 <style>
 .childPayrollCard {
-  font-size: 12px;
+  font-size: 14px;
   background: white;
   padding: 5px;
 }
@@ -25,15 +25,15 @@ export default {
   position: relative;
   display: flex;
   align-items: center;
-  text-align:left;
+  text-align: left;
   padding: 5px;
 }
-.payroll__description{
-overflow-wrap:inherit;
+.payroll__description {
+  width: 80%;
 }
 .payroll__image {
   width: 20px;
-  position:absolute;
-  right:10px;
+  position: absolute;
+  right: 10px;
 }
 </style>

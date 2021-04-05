@@ -4,11 +4,11 @@
       <h1 class="header_letters">{{ header.toUpperCase() }}</h1>
     </div>
     <div class="body bodyVacation">
-      <div class="vacationTitle">
       <img class="exitIcon" src="../assets/vacation.png" />
-        <h2 class="text_vacation_h2">23 dias</h2>
+      <div class="vacationTitle">
+        <p class="text_vacation_h2">23 dias</p>
+        <p class="text_vacation_p">Total de 24 dias</p>
       </div>
-        <p>total de 24 dias</p>
     </div>
   </div>
 </template>
@@ -28,17 +28,29 @@ export default {
   grid-row-start: 5;
   grid-row-end: 7;
 }
-
 .bodyVacation {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
+  padding: 5px;
+  text-align: left;
 }
 .vacationTitle {
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom:-1.2em;/* review */
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  text-align: left;
+  padding-left:0.5em;
+  margin-top:10%;
+}
+.text_vacation_h2{
+  margin:0;
+  font-weight:700;
+  font-size:30px;
+}
+.text_vacation_p{
+margin-top:0px;
 }
 </style>

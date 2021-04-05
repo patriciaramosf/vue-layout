@@ -49,34 +49,35 @@ export default {
   align-items: center;
 }
 .title {
-  width:100%;
+  width: 100%;
   text-align: center;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
   font-weight: 700;
 }
 /* header css */
-.header_letters{
-  font-size:16px;
+.header_letters {
+  font-size: 16px;
+  padding: 10px;
 }
-.body{
-  background-color: rgba(235,239,242, 0.3);
-  width:100%;
-  height:100%;
+.body {
+  background-color: rgba(235, 239, 242, 0.3);
+  width: 100%;
+  height: 100%;
 }
 /* footer css */
-.footer{
-  color:#f57c05;
-  display:flex;
+.footer {
+  color: #f57c05;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
-.footer_letters{
-  font-weight:500;
-   font-size:16px;
+.footer_letters {
+  font-weight: 500;
+  font-size: 16px;
 }
-.footer_icon{
-  width:8px;
-  height:14px;
-  padding-left:5px;
+.footer_icon {
+  width: 8px;
+  height: 14px;
+  padding-left: 5px;
 }
 </style>

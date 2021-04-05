@@ -7,7 +7,9 @@
       <childPayRollCard payRollDescription="Nómina de febrero - 2021" />
       <childPayRollCard payRollDescription="Nómina de enero - 2021" />
       <childPayRollCard payRollDescription="Nómina de abril - 2021" />
-      <childPayRollCard payRollDescription="Certificado de retenciones de enero - 2021" />
+      <childPayRollCard
+        payRollDescription="Certificado de retenciones de enero - 2021"
+      />
       <childPayRollCard payRollDescription="Nómina de febrero - 2021" />
       <childPayRollCard payRollDescription="Nómina de febrero - 2021" />
     </div>
@@ -45,7 +47,7 @@ export default {
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: auto;
   grid-gap: 5px;
-  overflow:hidden;
-   padding-top:0.5em;
+  overflow: hidden;
+  padding-top: 0.5em;
 }
 </style>

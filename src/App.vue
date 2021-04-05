@@ -16,6 +16,13 @@ export default {
 </script>
 
 <style>
+body{
+  margin:0
+}
+h1, h2, h3, h4{
+  padding:0;
+  margin:0;
+}
 #app{
   display:flex;
   justify-content: center;
