@@ -39,6 +39,7 @@ export default {
 }
 .childHolidaysCard_date{
   font-size:12px;
+    padding:5px;
 }
 .childHolidaysCard_dateCartoon {
   border-radius: 50%;

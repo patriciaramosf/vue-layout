@@ -63,7 +63,6 @@ export default {
   background: white;
   padding: 5px;
   display:flex;
-/*   align-items: center; */
 }
 .absences__row {
   position: relative;
@@ -78,6 +77,7 @@ export default {
 }
 .childAbsencesCard_dateCartoon {
   border-radius: 50%;
+  margin-top:20px;
   width: 35px;
   height: 35px;
   border: none;
