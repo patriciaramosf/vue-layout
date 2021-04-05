@@ -42,16 +42,17 @@ export default {
   flex-direction: column;
   position: relative;
   text-align: left;
-  padding-left:0.5em;
-  margin-top:10%;
+  padding-left: 0.5em;
+  margin-top: 10%;
 }
-.text_vacation_h2{
-  margin:0;
-  font-weight:700;
-  font-size:30px;
+.text_vacation_h2 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 30px;
 }
-.text_vacation_p{
-margin-top:0px;
- font-weight:500;
+.text_vacation_p {
+  margin-top: 0px;
+  font-weight: 500;
+  font-size: 14px;
 }
 </style>
