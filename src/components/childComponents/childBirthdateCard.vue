@@ -60,6 +60,6 @@ export default {
   width: 30px;
 }
 .birthdate__image {
-  width: 10px;
+  width: 18px;
 }
 </style>
