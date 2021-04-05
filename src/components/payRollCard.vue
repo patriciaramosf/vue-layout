@@ -45,8 +45,8 @@ export default {
 .payRollBody {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: auto;
-  grid-gap: 5px;
+  grid-template-rows: repeat(5, auto);
+  grid-gap: 3px;
   overflow: hidden;
   padding-top: 0.5em;
 }

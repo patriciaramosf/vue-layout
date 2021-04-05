@@ -35,6 +35,7 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding:5px;
 }
 .childHolidaysCard_date{
   font-size:12px;

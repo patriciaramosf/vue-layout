@@ -52,5 +52,6 @@ export default {
 }
 .text_vacation_p{
 margin-top:0px;
+ font-weight:500;
 }
 </style>

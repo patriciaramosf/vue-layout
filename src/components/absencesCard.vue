@@ -17,6 +17,12 @@
         absencesDates="25/03/2021 al 30/03/2021"
       />
       <childAbsencesCard
+        absencesDescription="Paula Palmera"
+        absencesImage="absence.png"
+        absencesType="Ausencia"
+        absencesDates="25/03/2021 de 10.03 a 11.23"
+      />
+      <childAbsencesCard
         absencesDescription="Doraemon el Gato Cósmico"
         absencesImage="absence.png"
         absencesType="Ausencia"
@@ -25,12 +31,6 @@
       <childAbsencesCard
         absencesDescription="Doraemon el Gato Cósmico"
         absencesImage="vacation.png"
-        absencesType="Baja médica"
-        absencesDates="25/03/2021 de 10.03 a 11.23"
-      />
-      <childAbsencesCard
-        absencesDescription="Jon Doe"
-        absencesImage="sickness.png"
         absencesType="Baja médica"
         absencesDates="25/03/2021 de 10.03 a 11.23"
       />
@@ -67,8 +67,8 @@ export default {
 .bodyAbsences {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: auto;
-  grid-gap: 5px;
+  grid-template-rows: repeat(6, minmax(95px, auto));
+  grid-gap: 3px;
   overflow: hidden;
   padding-top:0.5em;
 }

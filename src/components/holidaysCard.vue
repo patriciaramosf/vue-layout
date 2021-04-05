@@ -73,7 +73,7 @@ export default {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  grid-gap:5px;
+  grid-gap:3px;
   background-color: rgba(235,239,242, 0.2);
   padding-top:0.5em;
   overflow: hidden;

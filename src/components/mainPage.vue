@@ -39,6 +39,7 @@ export default {
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(9, 1fr);
   grid-gap: 20px;
+  padding-top:2em;
 }
 .item {
   border-top: solid #f57c05 4px;

@@ -1,12 +1,12 @@
 <template>
   <div class="child childAbsencesCard">
-    <div class="absences__row">
       <div class="childAbsencesCard_dateCartoon">
         <img
           class="childAbsencesCard_dateCartoon__image"
           :src="require(`@/assets/${absencesImage}`)"
         />
       </div>
+    <div class="absences__row">
       <div class="absences__description_wrapper">
         <p class="absences__description">{{ absencesDescription }}</p>
         <div class="absences__type_wrapper">
@@ -16,8 +16,8 @@
           </p>
         </div>
       </div>
-      <p class="absences__dates">{{ absencesDates }}</p>
       <img class="absences__image" src="../../assets/arrow.png" />
+    <p class="absences__dates">{{ absencesDates }}</p>
     </div>
   </div>
 </template>
@@ -47,7 +47,7 @@ export default {
         this.backgroundStyle.backgroundColor = "#89e16a";
         this.colorStyle.color = "#89e16a";
       } else {
-        this.backgroundStyle.backgroundColor = "#16a089";
+        this.backgroundStyle.backgroundColor = "#f57c05";
         this.colorStyle.color = "#f57c05";
       }
     },
@@ -62,15 +62,19 @@ export default {
   font-size: 14px;
   background: white;
   padding: 5px;
+  display:flex;
+/*   align-items: center; */
 }
 .absences__row {
   position: relative;
   display: flex;
   align-items: center;
-  text-align: left;
   padding: 5px;
   padding-right: 12px;
-  justify-content: space-around;
+  width:100%;
+}
+.absences__description_wrapper{
+  padding-left:15px;
 }
 .childAbsencesCard_dateCartoon {
   border-radius: 50%;
@@ -83,9 +87,10 @@ export default {
   align-items: center;
   justify-content: center;
   position: relative;
+  margin-left:8px; 
 }
 .childAbsencesCard_dateCartoon__image {
-  width: 30px;
+  width: 24px;
 }
 .absences__type_wrapper {
   display: flex;
@@ -98,6 +103,7 @@ export default {
   font-size: 14px;
   font-weight: 500;
   text-align: left;
+  white-space: nowrap;
 }
 .absences__type_name {
   text-align: left;
@@ -118,5 +124,8 @@ export default {
 .absences__dates {
   color: darkgrey;
   font-weight: 200;
+  text-align: right;
+  padding-top:0.6em;
+  padding-left:1em;
 }
 </style>

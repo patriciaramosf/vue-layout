@@ -35,5 +35,6 @@ export default {
 .exitIcon {
   width: 30px;
   height: 30px;
+  padding-top:0.3em;
 }
 </style>
